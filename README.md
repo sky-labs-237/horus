@@ -1,2 +1,2 @@
 # horus
-The Horus Project
+The Horus Project.
