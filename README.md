@@ -1,3 +1,3 @@
 # horus
-The Horus Project.
+The Horus Project!
 This is an update!
