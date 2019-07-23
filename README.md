@@ -29,6 +29,7 @@ module.exports = {
 }
 ```
 
+
 **Use `babel-loader` to `/\.tsx?$/` ?!**
 
 Yes, `babel-loader`. See `.babelrc`:
