@@ -1,4 +1,4 @@
-#testin a pull
+#testin a fetch
 
 <p align="center">Webpack + Babel + TypeScript + React Boilerplate</p>
 <p align="center">
