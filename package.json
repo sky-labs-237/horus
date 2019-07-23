@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "horus",
+  "version": "1.0.0",
+  "repository": "git@github.com:sky-labs-237/horus",
+  "author": "CTO <yves.bimai@sky-labs.io>",
+  "license": "MIT",
+  "scripts": {
+    "check-types": "tsc",
+    "dev": "node node_modules/cross-env/dist/bin/cross-env.js  NODE_ENV=development webpack-dev-server --color --progress",
+    "build": "node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production webpack --color --progress",
+    "start": "serve dist"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/node": "^12.6.2",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^5.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "serve": "^11.1.0",
+    "terser-webpack-plugin": "^1.3.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
+

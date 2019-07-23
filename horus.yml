@@ -1,0 +1,24 @@
+version: '2'
+services:
+  horus:
+    build: ./
+    command: yarn dev
+    image: horus:v1.0
+    container_name: horus
+    volumes:
+      - .:/code
+      - ./horus:/home/node/app
+      - /home/node/app/node_modules
+    ports:
+      - "8080:8080"
+    env_file: .env
+    environment:
+      VIRTUAL_HOST: horus.apps.sky-labs.io
+      LETSENCRYPT_HOST: horus.apps.sky-labs.io
+      LETSENCRYPT_EMAIL: yves.bimai@sky-labs.io
+
+networks:
+  default:
+    external:
+      name: ${NETWORK}
+
